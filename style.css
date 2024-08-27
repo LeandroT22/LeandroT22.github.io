@@ -4,6 +4,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 16px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 * {
@@ -19,78 +24,83 @@ body {
   background-color: cornflowerblue;
   padding: 1%;
   max-width: fit-content;
-  border-radius: 25px;
-  margin-left: 90%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 1%;
   margin-top: 1%;
 }
 
 h1 {
   margin-top: 5%;
-  font-size: 600%;
-  text-transform: uppercase;
+  font-size: 4rem;
   font-weight: 800;
   font-style: oblique;
   max-width: fit-content;
-  margin-left: 20%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2%;
 }
 
 h2 {
   margin-top: 5%;
   text-decoration: underline double rgb(86, 86, 179);
-  font-size: 400%;
+  font-size: 2.5rem; 
 }
 
 hr {
-  margin: 15%;
+  margin: 5% auto;
+  width: 80%; 
 }
+
 .texto #b1 {
   margin-bottom: 5%;
-  font-size: 200%;
+  font-size: 1.5rem;
   font-weight: 600;
   text-decoration: underline lightgray;
   font-style: italic;
 }
 
 .texto p {
-  font-size: 150%;
+  font-size: 1.25rem;
   font-weight: 400;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 5%;
 }
 
 .tabla {
-  border-spacing: 10px;
+  border-spacing: 0.5rem;
   margin: auto;
-  max-width: fit-content;
-  th,
-  td {
-    border: 2px inset;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgb(103, 144, 220);
-  }
-
-  td:hover,
-  th:hover {
-    background-color: rgb(89, 124, 190);
-  }
+  max-width: 90%; 
 }
 
-.contacto{
-  background-color: rgb(100, 149, 237, 0.5);
-  margin-left: 35%;
-  margin-right: 35%;
-  border-radius: 25px;
+.tabla th,
+.tabla td {
+  border: 2px inset;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgb(103, 144, 220);
+}
+
+.tabla td:hover,
+.tabla th:hover {
+  background-color: rgb(89, 124, 190);
+}
+
+.contacto {
+  background-color: rgba(100, 149, 237, 0.5);
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 1.5rem;
+  padding: 2%;
 }
 
 .contacto p {
-  margin-top: -10%;
-  margin-bottom: 10%;
+  margin-top: 0;
+  margin-bottom: 2%;
   font-weight: 400;
   font-family: fantasy;
-  font-size: 150%;
+  font-size: 1.25rem; 
 }
 
 .contacto #ll {
@@ -102,10 +112,73 @@ a:link {
   text-decoration: none;
 }
 
-img{
-  width: 25%;
-  border-radius: 100%;
+img {
+  width: 50%; 
+  border-radius: 50%;
   margin-top: 5%;
   border-style: solid;
   border-color: white;
+}
+
+
+@media (max-width: 1366px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .texto p {
+    font-size: 1.125rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ei {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .texto p {
+    font-size: 1rem;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .texto p {
+    font-size: 0.875rem;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  img {
+    width: 100%;
+  }
 }
